@@ -76,7 +76,9 @@ class Navbar extends Component {
         <header className="navbar">
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item">
+              <a 
+              className="navbar-item"
+              onClick={this.homeClick}>
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span
@@ -90,15 +92,27 @@ class Navbar extends Component {
             </div>
             <div id="navbarMenuHeroC" className={navMenuClases}>
               <div className="navbar-end">
-                <a href="/" onClick={this.homeClick} className={homeClasses}>
+                <a 
+                href="/" 
+                onClick={this.homeClick} 
+                className={homeClasses}>
                   Home
                 </a>
-                <a href="/projects" onClick={this.projectClick} className={projectsClasses}>
+
+                <a 
+                href="/projects" 
+                onClick={this.projectClick} 
+                className={projectsClasses}>
                   Projects
                 </a>
-                <a href="/about" onClick={this.aboutClick} className={aboutClasses}>
+
+                <a 
+                href="/about" 
+                onClick={this.aboutClick} 
+                className={aboutClasses}>
                   About me
                 </a>
+                
               </div>
             </div>
           </div>
