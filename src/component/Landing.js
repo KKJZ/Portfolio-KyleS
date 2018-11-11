@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./index.css"
 import {setHome} from '../actions/navbar';
 
 class Landing extends Component {
@@ -10,10 +11,14 @@ class Landing extends Component {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">
-            Landing
+            Hey, I'm Kyle Stockmann
           </h1>
+            <img className="profileIcon" src="https://preview.ibb.co/cyTdoV/me.jpg" alt="pic of Kyle Stockmann" border="0" />
           <h2 className="subtitle">
-            Subtitle
+            Fullstack Developer/ Professional Shyguy
+          </h2>
+          <h2 className="subtitle">
+            Currently looking to build my coding knowledge.
           </h2>
         </div>
       </div>
