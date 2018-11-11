@@ -10,11 +10,50 @@ class Main extends Component {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">
-            Main
+            My Projects
           </h1>
-          <h2 className="subtitle">
-            Subtitle
-          </h2>
+          <div className="columns">
+            <div className="column">
+              <h2 className="subtitle">League of Legends Recent players</h2>
+              <p>Built with:</p>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              <a href="https://ibb.co/iXznFA" target="_blank"><img src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
+              <a href="https://github.com/KKJZ/League-Recent-Players" target="_blank">GitHub repo</a>
+            </div>
+            <div className="column">
+              <h2 className="subtitle">Bartenders Blackbook</h2>
+              <p>Built with:</p>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>JWT(json web token)</li>
+              </ul>
+              <a href="https://ibb.co/gYPyNq" target="_blank"><img src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
+              <a href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank">GitHub repo</a>
+            </div>
+            <div className="column">
+              <h2 className="subtitle">Personal Publication</h2>
+              <p>Built with:</p>
+              <ul>
+                <li>React</li>
+                <li>React-Router</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>JWT(json web token)</li>
+              </ul>
+              <a href="https://ibb.co/fwzvHf" target="_blank"><img src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
+              <a href="https://github.com/KKJZ/Journal_React" target="_blank">React Frontend </a>
+              <a href="https://github.com/KKJZ/Journal_Backend" target="_blank">Express.js Backend</a>
+            </div>
+          </div>
         </div>
       </div>
     )
