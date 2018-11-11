@@ -99,14 +99,6 @@ class Navbar extends Component {
                 <a href="/about" onClick={this.aboutClick} className={aboutClasses}>
                   About me
                 </a>
-                <span className="navbar-item">
-                  <a href="https://github.com/KKJZ" target="_blank" className="button is-success is-inverted">
-                    <span className="icon">
-                      <i className="fab fa-github"></i>
-                    </span>
-                    <span>My Github</span>
-                  </a>
-                </span>
               </div>
             </div>
           </div>
