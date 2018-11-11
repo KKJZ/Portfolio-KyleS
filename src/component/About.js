@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import {setAbout} from '../actions/navbar';
 
 class About extends Component {
+  componentWillMount() {
+    this.props.about(setAbout);
+  }
   render() {
     return (
       <div className="hero-body">

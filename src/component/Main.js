@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import {setProjects} from '../actions/navbar';
 
 class Main extends Component {
+  componentWillMount() {
+    this.props.projects(setProjects);
+  }
   render() {
     return (
       <div className="hero-body">

@@ -8,27 +8,26 @@ class Footer extends Component {
         <nav className="tabs is-boxed is-fullwidth">
           <div className="container">
             <ul>
-              <li><a>
+              <li><a href="https://github.com/KKJZ" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <i className="fab fa-github"></i>
                 </span>
                 Github</a></li>
-              <li><a>
+              <li><a href="mailto:kyle_stockmann@yahoo.com?Subject=Hello" target="_top">
                 <span className="icon">
                   <i className="fab fa-yahoo"></i>
                 </span>
                 Email</a></li>
-              <li><a>
+              <li><a href="https://www.linkedin.com/in/kyle-stockmann-694a94166/" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <i className="fab fa-linkedin"></i>
                 </span>
                 Linkedin</a></li>
-              <li><a>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <i className="fab fa-angellist"></i>
                 </span>
               Angel List</a></li>
-              <li><a>Components</a></li>
             </ul>
           </div>
         </nav>

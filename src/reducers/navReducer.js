@@ -1,7 +1,8 @@
-import {HOME, PROJECTS, ABOUT} from '../actions/navbar';
+import {HOME, PROJECTS, ABOUT, BURGER} from '../actions/navbar';
 
 const initialState = {
-	active: HOME
+	active: HOME,
+	burger: false
 };
 
 export default function navReducer(state=initialState, action) {
@@ -21,7 +22,12 @@ export default function navReducer(state=initialState, action) {
 				active: ABOUT
 			});
 
+		case BURGER:
+			return Object.assign({}, state, {
+				burger: action.burger
+			})
+
 		default:
 			return state;
-	};
+	}
 };

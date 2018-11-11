@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import {setHome} from '../actions/navbar';
 
 class Landing extends Component {
+  componentWillMount() {
+    this.props.landing(setHome);
+  }
   render() {
     return (
       <div className="hero-body">

@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import {setHome, setProjects, setAbout} from '../actions/navbar';
+import {setHome, setProjects, setAbout, HOME, PROJECTS, ABOUT} from '../actions/navbar';
 
 class Navbar extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      active: this.props.active
-    }
   this.homeClick = this.homeClick.bind(this);
   this.projectClick = this.projectClick.bind(this);
   this.aboutClick = this.aboutClick.bind(this);
+  this.burgerClick = this.burgerClick.bind(this);
   };
 
   homeClick() {
@@ -24,7 +21,56 @@ class Navbar extends Component {
   aboutClick() {
     this.props.onNavClick(setAbout);
   };
+
+  burgerClick() {
+    this.props.onBurgerClick(!this.props.burger);
+  };
   render(){
+    let homeClasses;
+    let projectsClasses;
+    let aboutClasses;
+    //nav bar active status
+    switch(this.props.active){
+      case HOME:
+        homeClasses = "navbar-item is-active";
+        projectsClasses = "navbar-item";
+        aboutClasses = "navbar-item";
+        break;
+
+      case PROJECTS:
+        homeClasses = "navbar-item";
+        projectsClasses ="navbar-item is-active";
+        aboutClasses = "navbar-item";
+        break;
+
+      case ABOUT:
+        homeClasses = "navbar-item";
+        projectsClasses = "navbar-item";
+        aboutClasses = "navbar-item is-active";
+        break;
+
+      default: 
+        homeClasses = "navbar-item is-active";
+        projectsClasses = "navbar-item";
+        aboutClasses = "navbar-item";
+    }
+    let navBurgerClasses;
+    let navMenuClases;
+    //nav bar burger menu
+    switch(this.props.burger) {
+      case true:
+        navBurgerClasses = "navbar-burger burger is-active";
+        navMenuClases = "navbar-menu is-active";
+        break;
+
+      case false:
+        navBurgerClasses = "navbar-burger burger";
+        navMenuClases = "navbar-menu";
+        break;
+      default:
+        navBurgerClasses = "navbar-burger burger";
+        navMenuClases = "navbar-menu";
+    }
     return (
     <div className="hero-head">
         <header className="navbar">
@@ -33,21 +79,24 @@ class Navbar extends Component {
               <a className="navbar-item">
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
-              <span className="navbar-burger burger" data-target="navbarMenuHeroC">
-                <span></span>
-                <span></span>
-                <span></span>
+              <span
+              onClick={this.burgerClick}
+              className={navBurgerClasses}
+              data-target="navbarMenuHeroC">
+                <span aria-hidden={!this.props.burger}></span>
+                <span aria-hidden={!this.props.burger}></span>
+                <span aria-hidden={!this.props.burger}></span>
               </span>
             </div>
-            <div id="navbarMenuHeroC" className="navbar-menu">
+            <div id="navbarMenuHeroC" className={navMenuClases}>
               <div className="navbar-end">
-                <a onClick={this.homeClick} className="navbar-item is-active">
+                <a href="/" onClick={this.homeClick} className={homeClasses}>
                   Home
                 </a>
-                <a onClick={this.projectClick} className="navbar-item">
+                <a href="/projects" onClick={this.projectClick} className={projectsClasses}>
                   Projects
                 </a>
-                <a onClick={this.aboutClick} className="navbar-item">
+                <a href="/about" onClick={this.aboutClick} className={aboutClasses}>
                   About me
                 </a>
                 <span className="navbar-item">
