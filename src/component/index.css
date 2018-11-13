@@ -4,6 +4,11 @@ img.profileIcon {
 	width: 150px;
 }
 
+img.project {
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
 a.express {
 	margin-top: 5px;
 }
