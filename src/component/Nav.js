@@ -76,11 +76,6 @@ class Navbar extends Component {
         <header className="navbar">
           <div className="container">
             <div className="navbar-brand">
-              <a 
-              className="navbar-item"
-              onClick={this.homeClick}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
-              </a>
               <span
               onClick={this.burgerClick}
               className={navBurgerClasses}
