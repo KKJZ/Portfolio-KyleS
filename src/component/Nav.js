@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {setHome, setProjects, setAbout, HOME, PROJECTS, ABOUT} from '../actions/navbar';
+import {BrowserRouter as Link} from 'react-router-dom';
 
 class Navbar extends Component {
   constructor(props){
@@ -87,27 +88,30 @@ class Navbar extends Component {
             </div>
             <div id="navbarMenuHeroC" className={navMenuClases}>
               <div className="navbar-end">
+              <Link to="/">
                 <a 
-                href="/" 
+                href="/"
                 onClick={this.homeClick} 
                 className={homeClasses}>
                   Home
                 </a>
-
+                </Link>
+                <Link to="/projects">
                 <a 
-                href="/projects" 
+                href="/projects"
                 onClick={this.projectClick} 
                 className={projectsClasses}>
                   Projects
                 </a>
-
+                </Link>
+                <Link to="/about">
                 <a 
-                href="/about" 
+                href="/about"
                 onClick={this.aboutClick} 
                 className={aboutClasses}>
                   About me
                 </a>
-                
+                </Link>
               </div>
             </div>
           </div>
