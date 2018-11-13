@@ -23,7 +23,7 @@ class Main extends Component {
                 <li>jQuery</li>
               </ul>
               <a href="https://ibb.co/iXznFA" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
-              <a href="https://github.com/KKJZ/League-Recent-Players" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+              <a className="button is-dark" href="https://github.com/KKJZ/League-Recent-Players" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Bartenders Blackbook</h2>
@@ -35,7 +35,7 @@ class Main extends Component {
                 <li>JWT(json web token)</li>
               </ul>
               <a href="https://ibb.co/gYPyNq" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
-              <a href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+              <a className="button is-dark" href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Personal Publication</h2>
@@ -50,8 +50,8 @@ class Main extends Component {
                 <li>JWT(json web token)</li>
               </ul>
               <a href="https://ibb.co/fwzvHf" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
-              <a href="https://github.com/KKJZ/Journal_React" target="_blank" rel="noopener noreferrer">React Frontend </a>
-              <a href="https://github.com/KKJZ/Journal_Backend" target="_blank" rel="noopener noreferrer">Express.js Backend</a>
+              <a className="button is-dark" href="https://github.com/KKJZ/Journal_React" target="_blank" rel="noopener noreferrer">React Repo</a> <br />
+              <a className="express button is-dark" href="https://github.com/KKJZ/Journal_Backend" target="_blank" rel="noopener noreferrer">Express.js Repo</a>
             </div>
           </div>
         </div>
