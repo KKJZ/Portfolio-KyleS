@@ -22,8 +22,8 @@ class Main extends Component {
                 <li>JavaScript</li>
                 <li>jQuery</li>
               </ul>
-              <a href="https://ibb.co/iXznFA" target="_blank"><img src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
-              <a href="https://github.com/KKJZ/League-Recent-Players" target="_blank">GitHub repo</a>
+              <a href="https://ibb.co/iXznFA" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
+              <a href="https://github.com/KKJZ/League-Recent-Players" target="_blank" rel="noopener noreferrer">GitHub repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Bartenders Blackbook</h2>
@@ -34,8 +34,8 @@ class Main extends Component {
                 <li>MongoDB</li>
                 <li>JWT(json web token)</li>
               </ul>
-              <a href="https://ibb.co/gYPyNq" target="_blank"><img src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
-              <a href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank">GitHub repo</a>
+              <a href="https://ibb.co/gYPyNq" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
+              <a href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank" rel="noopener noreferrer">GitHub repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Personal Publication</h2>
@@ -49,9 +49,9 @@ class Main extends Component {
                 <li>MongoDB</li>
                 <li>JWT(json web token)</li>
               </ul>
-              <a href="https://ibb.co/fwzvHf" target="_blank"><img src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
-              <a href="https://github.com/KKJZ/Journal_React" target="_blank">React Frontend </a>
-              <a href="https://github.com/KKJZ/Journal_Backend" target="_blank">Express.js Backend</a>
+              <a href="https://ibb.co/fwzvHf" target="_blank" rel="noopener noreferrer"><img src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
+              <a href="https://github.com/KKJZ/Journal_React" target="_blank" rel="noopener noreferrer">React Frontend </a>
+              <a href="https://github.com/KKJZ/Journal_Backend" target="_blank" rel="noopener noreferrer">Express.js Backend</a>
             </div>
           </div>
         </div>
