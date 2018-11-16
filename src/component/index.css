@@ -11,6 +11,13 @@ img.project {
 	height: 200px;
 }
 
+img.aboutPic {
+	float: left;
+	width: 500px;
+	height: 500px;
+	margin: 10px;
+}
+
 a.express {
 	margin-top: 5px;
 	margin-bottom: 5px;

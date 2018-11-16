@@ -12,7 +12,7 @@ class About extends Component {
           <h1 className="title">
             About me:
           </h1>
-          <img src="https://preview.ibb.co/cyTdoV/me.jpg" alt="pic of Kyle Stockmann"/>
+          <img className="aboutPic" src="https://preview.ibb.co/cyTdoV/me.jpg" alt="pic of Kyle Stockmann"/>
           <h2 className="subtitle">
             Born and raised in the Pacific Northwest; I have always enjoyed, biking, hiking, and longboarding but my real passion has always been computers.<br />
             From the first time I played on a computer I had a drive to learn more about them.<br />

@@ -23,7 +23,7 @@ class Footer extends Component {
                   <i className="fab fa-linkedin"></i>
                 </span>
                 Linkedin</a></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer">
+              <li><a href="https://angel.co/kyle-stockmann" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <i className="fab fa-angellist"></i>
                 </span>
