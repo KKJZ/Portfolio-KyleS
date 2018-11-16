@@ -15,6 +15,9 @@ class Main extends Component {
           <div className="columns">
             <div className="column">
               <h2 className="subtitle">League of Legends Recent players</h2>
+              <a href="https://ibb.co/iXznFA" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
+              <a className="button is-dark" href="https://github.com/KKJZ/League-Recent-Players" target="_blank" rel="noopener noreferrer">GitHub Repo</a><br/>
+              <a className="express button is-light" href='https://kkjz.github.io/League-Recent-Players/Welcome.html' target="_blank" rel="noopener noreferrer">Live App</a>
               <p>Built with:</p>
               <ul>
                 <li>Html</li>
@@ -22,23 +25,26 @@ class Main extends Component {
                 <li>JavaScript</li>
                 <li>jQuery</li>
               </ul>
-              <a href="https://ibb.co/iXznFA" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/d8uMaA/LOL.jpg" alt="league" border="0" /></a>
-              <a className="button is-dark" href="https://github.com/KKJZ/League-Recent-Players" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Bartenders Blackbook</h2>
+              <a href="https://ibb.co/gYPyNq" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
+              <a className="button is-dark" href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank" rel="noopener noreferrer">GitHub Repo</a><br />
+              <a className="express button is-light" href='https://kkjz.github.io/Bartenders_Blackbooks/Public/Landing.html' target="_blank" rel="noopener noreferrer">Live App</a>
               <p>Built with:</p>
               <ul>
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>MongoDB</li>
-                <li>JWT(json web token)</li>
+                <li>JWT</li>
               </ul>
-              <a href="https://ibb.co/gYPyNq" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/f1oQ2q/drink.jpg" alt="drink" border="0" /></a>
-              <a className="button is-dark" href="https://github.com/KKJZ/Bartenders_Blackbooks" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
             <div className="column">
               <h2 className="subtitle">Personal Publication</h2>
+              <a href="https://ibb.co/fwzvHf" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
+              <a className="button is-dark" href="https://github.com/KKJZ/Journal_React" target="_blank" rel="noopener noreferrer">React Repo</a> <br />
+              <a className="express button is-dark" href="https://github.com/KKJZ/Journal_Backend" target="_blank" rel="noopener noreferrer">Express.js Repo</a><br />
+              <a className="button is-light" href='https://personalpublication.herokuapp.com/' target="_blank" rel="noopener noreferrer">Live App</a>
               <p>Built with:</p>
               <ul>
                 <li>React</li>
@@ -47,11 +53,8 @@ class Main extends Component {
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>MongoDB</li>
-                <li>JWT(json web token)</li>
+                <li>JWT</li>
               </ul>
-              <a href="https://ibb.co/fwzvHf" target="_blank" rel="noopener noreferrer"><img className="project" src="https://preview.ibb.co/dGfPA0/NewEntry.jpg" alt="NewEntry" border="0" /></a>
-              <a className="button is-dark" href="https://github.com/KKJZ/Journal_React" target="_blank" rel="noopener noreferrer">React Repo</a> <br />
-              <a className="express button is-dark" href="https://github.com/KKJZ/Journal_Backend" target="_blank" rel="noopener noreferrer">Express.js Repo</a>
             </div>
           </div>
         </div>

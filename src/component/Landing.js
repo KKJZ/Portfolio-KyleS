@@ -15,7 +15,7 @@ class Landing extends Component {
           </h1>
             <img className="profileIcon" src="https://preview.ibb.co/cyTdoV/me.jpg" alt="pic of Kyle Stockmann" border="0" />
           <h2 className="subtitle">
-            Fullstack Developer/ Professional Shyguy
+            Fullstack Developer
           </h2>
           <h2 className="subtitle">
             Currently looking to build my coding knowledge.
