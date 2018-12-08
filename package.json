@@ -14,6 +14,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "css-build": "node-sass --omit-source-map-url src/mystyles.scss public/css/mystyles.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
