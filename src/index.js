@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "bulma";
+// import "bulma";
 import './index.css';
 import Routes from './component/Routes';
 import {Provider} from 'react-redux';
