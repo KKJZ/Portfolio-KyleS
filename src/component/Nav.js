@@ -33,27 +33,27 @@ class Navbar extends Component {
     //nav bar active status
     switch(this.props.active){
       case HOME:
-        homeClasses = "navbar-item is-active";
-        projectsClasses = "navbar-item";
-        aboutClasses = "navbar-item";
+        homeClasses = "navbar-item home is-active";
+        projectsClasses = "navbar-item projects";
+        aboutClasses = "navbar-item about";
         break;
 
       case PROJECTS:
-        homeClasses = "navbar-item";
-        projectsClasses ="navbar-item is-active";
-        aboutClasses = "navbar-item";
+        homeClasses = "navbar-item home";
+        projectsClasses ="navbar-item projects is-active";
+        aboutClasses = "navbar-item about";
         break;
 
       case ABOUT:
-        homeClasses = "navbar-item";
-        projectsClasses = "navbar-item";
-        aboutClasses = "navbar-item is-active";
+        homeClasses = "navbar-item home";
+        projectsClasses = "navbar-item projects";
+        aboutClasses = "navbar-item about is-active";
         break;
 
       default: 
-        homeClasses = "navbar-item is-active";
-        projectsClasses = "navbar-item";
-        aboutClasses = "navbar-item";
+        homeClasses = "navbar-item home is-active";
+        projectsClasses = "navbar-item projects";
+        aboutClasses = "navbar-item about";
     }
     let navBurgerClasses;
     let navMenuClases;
