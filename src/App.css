@@ -2,15 +2,71 @@ html {
   box-sizing: border-box;
 }
 
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.App {
+  margin-top: 100px; 
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 600px;
+}
+
 .container{
   display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100%;
 }
 
 .box {
-  display: flex;
+  margin: 2px;
+  background: grey;
   align-content: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 25%;
+  height: 25%;
+  border: 1px black solid;
+  flex-grow: 1;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+  transition: 5s;
+}
+
+.in-active{
+  display: none;
+}
+
+.outside {
+  margin: 2px;
+  background: grey;
+  align-content: center;
+  justify-content: center;
+  width: 25%;
+  height: 25%;
   border: 1px black solid;
 }
+
+@media only screen and (min-width: 640px) {
+  .outside {
+    width: 25%;
+    height: 25%;
+  }
+
+  .box {
+    flex-grow: 0;
+  }
+
+  .App {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+} 
