@@ -1,0 +1,29 @@
+.back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    margin-right: 20px;
+}
+
+.back:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.back:before, .back:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .back:before {
+    transform: rotate(45deg);
+  }
+  .back:after {
+    transform: rotate(-45deg);
+  }
