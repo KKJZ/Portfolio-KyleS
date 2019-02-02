@@ -74,12 +74,12 @@ class App extends Component {
   }
 
   onTransitionEndAbout(e) {
-      this.setTick(this.state.tick);
-      console.log(this.state.tick)
-      if(0 !== this.state.tick % 2){
-        console.log('setting state');
-        this.setAboutState(!(this.state.aboutContent));
-      }
+    console.log(e);
+    this.setTick(this.state.tick);
+    if(0 !== this.state.tick % 2){
+      console.log('setting state');
+      this.setAboutState(!(this.state.aboutContent));
+    }
   }
 
   onTransitionEndProject(e) {

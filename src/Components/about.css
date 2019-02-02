@@ -30,3 +30,7 @@
 .wrapper {
     position: relative;
 }
+
+@media only screen and (min-width: 640px) {
+    
+}
