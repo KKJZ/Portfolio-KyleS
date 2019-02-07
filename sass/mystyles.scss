@@ -1,6 +1,21 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
 
+// aside adjust
+// $menu-item-color: color
+// $menu-item-radius size 
+// $menu-item-hover-color: color
+// $menu-item-hover-background-color: color
+// $menu-item-active-color: color
+// $menu-item-active-background-color: color
+// $menu-list-border-left: 1px solid $border
+// $menu-label-color: color
+
+// Button adjust
+$button-color: white;
+$link-active: white;
+$link-hover: hsl(0, 0%, 86%);
+$link-hover-border: black;
+$button-border-color: black;
 
 // examples
 // // Import a Google Font
@@ -27,3 +42,4 @@
 // $control-border-width: 2px;
 // $input-border-color: transparent;
 // $input-shadow: none;
+@import "../node_modules/bulma/bulma.sass";
