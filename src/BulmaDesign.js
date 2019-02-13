@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import "./css/bulma.css";
+import {setBurger} from "./actions/burger";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -19,7 +20,7 @@ import Footer from "./Components/Footer";
 // manga scroll animation
 class App extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.handleScroll = this.handleScroll.bind(this)
     }
 
@@ -34,16 +35,16 @@ class App extends Component {
     handleScroll(){
         let offsetY = window.scrollY;
         if(offsetY !== 0) {
-            console.log(this);
+            this.props.dispatch(setBurger(true));
         }else {
-            console.log(this);
+            this.props.dispatch(setBurger(false));
         }
     }
 
     render(){
         return (
         <section className="hero is-light is-bold">
-            <Nav burger={this.state}/>
+            <Nav burger={this.props}/>
 
             <Home />
             

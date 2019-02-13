@@ -8,3 +8,7 @@
 .scrollBurger {
     display: block;
 }
+
+.hidden {
+    display: none;
+}
