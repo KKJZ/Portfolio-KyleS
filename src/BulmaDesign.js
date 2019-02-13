@@ -1,4 +1,14 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
+import "./css/bulma.css";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
+
+
 
 // fullscreen hero like original profolio
 // can acutally use that as a good start
@@ -10,80 +20,48 @@ import React, {Component} from "react";
 class App extends Component {
     constructor(props) {
         super(props)
+        this.handleScroll = this.handleScroll.bind(this)
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(){
+        let offsetY = window.scrollY;
+        if(offsetY !== 0) {
+            console.log(this);
+        }else {
+            console.log(this);
+        }
     }
 
     render(){
         return (
-        <section class="hero is-success is-fullheight">
-          <!-- Hero head: will stick at the top -->
-          <div class="hero-head">
-            <header class="navbar">
-              <div class="container">
-                <div class="navbar-brand">
-                  <a class="navbar-item">
-                    <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-                  </a>
-                  <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </div>
-                <div id="navbarMenuHeroC" class="navbar-menu">
-                  <div class="navbar-end">
-                    <a class="navbar-item is-active">
-                      Home
-                    </a>
-                    <a class="navbar-item">
-                      Examples
-                    </a>
-                    <a class="navbar-item">
-                      Documentation
-                    </a>
-                    <span class="navbar-item">
-                      <a class="button is-success is-inverted">
-                        <span class="icon">
-                          <i class="fab fa-github"></i>
-                        </span>
-                        <span>Download</span>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </header>
-          </div>
-        
-          <!-- Hero content: will be in the middle -->
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="title">
-                Title
-              </h1>
-              <h2 class="subtitle">
-                Subtitle
-              </h2>
-            </div>
-          </div>
-        
-          <!-- Hero footer: will stick at the bottom -->
-          <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-              <div class="container">
-                <ul>
-                  <li class="is-active"><a>Overview</a></li>
-                  <li><a>Modifiers</a></li>
-                  <li><a>Grid</a></li>
-                  <li><a>Elements</a></li>
-                  <li><a>Components</a></li>
-                  <li><a>Layout</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+        <section className="hero is-light is-bold">
+            <Nav burger={this.state}/>
+
+            <Home />
+            
+            <About />
+
+            <Projects />
+
+            <Contact />
+
+            <Footer />
         </section>
         )
     }
 }
 
-export default App;
+const mapStateToProps = state => ({
+    isMenuOpen: state.burgerMenu.isMenuOpen,
+    isYOffset: state.burgerMenu.isYOffset,
+})
+
+export default connect(mapStateToProps)(App);
