@@ -1,5 +1,5 @@
 .landing {
-    background-image: url(../imgs/Landing.JPG);
+    background-image: url(https://i.ibb.co/MfT5p58/Landing.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -15,6 +15,18 @@
     opacity: .6; 
 }
 
+img.about {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+section.about{
+    background-color: rgba(50,31,31,.2);
+    padding: 10px;
+    border-radius: 30px
+}
+
 p.about {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
