@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects(props) {
     return (
-    <section class="hero is-dark is-bold is-fullheight">
+    <section class="hero is-light is-bold is-fullheight">
     {/* <!-- Hero content: will be in the middle --> */}
     <a name="Projects" />
         <div class="hero-body">
