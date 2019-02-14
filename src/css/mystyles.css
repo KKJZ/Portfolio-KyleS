@@ -18,7 +18,9 @@
 img.about {
     margin-top: 20px;
     border-radius: 20px;
+    width: 500px;
 }
+
 
 section.about{
     background-color: rgba(202, 202, 202, 0.19);
@@ -29,4 +31,43 @@ section.about{
 p.about {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+div.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+img.projects {
+    border-radius: 5px; 
+}
+
+button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+button:hover {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #8e8e8e;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
 }
