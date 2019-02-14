@@ -1,0 +1,20 @@
+.landing {
+    background-image: url(../imgs/Landing.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#3d3f40,#363a18);
+    opacity: .6; 
+}
+
+p.about {
+    margin-bottom: 20px;
+}
