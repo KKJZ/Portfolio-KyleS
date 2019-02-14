@@ -4,16 +4,30 @@ class Footer extends Component {
 
     render() {
         return (
-        <div class="hero-foot">
-          <nav class="tabs">
-            <div class="container">
+          <div className="hero-foot">
+          <nav className="tabs is-boxed is-fullwidth">
+            <div className="container">
               <ul>
-                <li class="is-active"><a>Overview</a></li>
-                <li><a>Modifiers</a></li>
-                <li><a>Grid</a></li>
-                <li><a>Elements</a></li>
-                <li><a>Components</a></li>
-                <li><a>Layout</a></li>
+                <li><a href="https://github.com/KKJZ" target="_blank" rel="noopener noreferrer">
+                  <span className="icon">
+                    <i className="fab fa-github"></i>
+                  </span>
+                  Github</a></li>
+                <li><a href="mailto:kyle_stockmann@yahoo.com?Subject=Hello" target="_top">
+                  <span className="icon">
+                    <i className="fab fa-yahoo"></i>
+                  </span>
+                  Email</a></li>
+                <li><a href="https://www.linkedin.com/in/kyle-stockmann-694a94166/" target="_blank" rel="noopener noreferrer">
+                  <span className="icon">
+                    <i className="fab fa-linkedin"></i>
+                  </span>
+                  Linkedin</a></li>
+                <li><a href="https://angel.co/kyle-stockmann" target="_blank" rel="noopener noreferrer">
+                  <span className="icon">
+                    <i className="fab fa-angellist"></i>
+                  </span>
+                Angel List</a></li>
               </ul>
             </div>
           </nav>
