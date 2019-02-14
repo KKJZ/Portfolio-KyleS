@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .landing {
     background-image: url(https://i.ibb.co/MfT5p58/Landing.jpg);
     background-size: cover;
