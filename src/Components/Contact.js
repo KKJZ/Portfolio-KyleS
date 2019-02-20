@@ -10,40 +10,34 @@ export default function Contact(props) {
           <h1 class="title">
               Contact Me
           </h1>
-          <h2 class="subtitle">
-              Subtitle
-          </h2>
           <div class="columns">
             <div class="column">
-
+            <form onSubmit={(e) => props.handleSubmit(e)}>
               <div class="field">
-                <label class="label">Name</label>
+                <label class="label subtitle">Name</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Text input" />
+                  <input class="input" type="text" placeholder="Name" required />
                 </div>
               </div>
 
               <div class="field">
-                <label class="label">Subject</label>
+                <label class="label subtitle">Subject</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Text input" value="bulma" />
+                  <input class="input" type="text" placeholder="Subject" required />
                 </div>
               </div>
 
               <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@" />
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-envelope"></i>
-                  </span>
+                <label class="label subtitle">Email</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="Email" required  />
                 </div>
               </div>
 
               <div class="field">
-                <label class="label">Message</label>
+                <label class="label subtitle">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                  <textarea class="textarea" placeholder="Your messege here..." required></textarea>
                 </div>
               </div>
 
@@ -52,12 +46,13 @@ export default function Contact(props) {
                   <button class="button is-link">Submit</button>
                 </div>
                 <div class="control">
-                  <button class="button is-text">Cancel</button>
+                  <button class="button is-text">Clear</button>
                 </div>
-              </div>  
+              </div>
+            </form>  
             </div>
-            <div class="column">
-            
+            <div class="column is-half">
+                <img src="https://i.ibb.co/mGwPMPj/About.jpg" class="about" alt="Picture of Sasha and I" />
             </div>
           </div>
         </div>

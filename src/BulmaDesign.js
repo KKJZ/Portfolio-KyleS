@@ -41,6 +41,11 @@ class App extends Component {
         }
     }
 
+    handleSubmit(e) {
+        e.preventDefault();
+        console.log(this);
+    }
+
     render(){
         return (
         <section className="hero is-light is-bold">
@@ -52,7 +57,7 @@ class App extends Component {
 
             <Projects />
 
-            <Contact />
+            <Contact onSubmit={this.handleSubmit}/>
 
             <Footer />
         </section>
