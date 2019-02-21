@@ -47,7 +47,6 @@ class App extends Component {
     }
 
     handleProjectsClick(e) {
-        const projects = ["PesonalPub", "BartendersBook", "LoLRecent"];
         const target = e.target.className.split(" ")[0];
         findProject(this.props.project, target, this.props.dispatch)
     }
