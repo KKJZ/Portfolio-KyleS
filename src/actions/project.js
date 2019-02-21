@@ -1,4 +1,6 @@
 export const CHANGE_PROJECTS = "CHANGE_PROJECTS";
+
+//function to find the next project to show
 export const findProject = (current, direction, dispatch) => {
     if(current === "PersonalPub"){
         if(direction === "next"){
