@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import "./css/bulma.css";
 import {setBurger} from "./actions/burger";
 import {setName, setSubject, setEmail, setContent} from './actions/form';
+import {findProject} from "./actions/project"
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -25,6 +26,7 @@ class App extends Component {
         this.handleScroll = this.handleScroll.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleProjectsClick = this.handleProjectsClick.bind(this);
     }
 
     componentDidMount() {
@@ -47,7 +49,7 @@ class App extends Component {
     handleProjectsClick(e) {
         const projects = ["PesonalPub", "BartendersBook", "LoLRecent"];
         const target = e.target.className.split(" ")[0];
-        console.log(target);
+        findProject(this.props.project, target, this.props.dispatch)
     }
 
     handleSubmit(e) {
@@ -85,7 +87,7 @@ class App extends Component {
             
             <About />
 
-            <Projects Click={this.handleProjectsClick} />
+            <Projects Click={this.handleProjectsClick} current={this.props.project} />
 
             <Contact onSubmit={this.handleSubmit} Change={this.handleInputChange}/>
 
@@ -104,7 +106,7 @@ const mapStateToProps = state => ({
         email: state.form.email,
         content: state.form.content
     },
-    project: state.project.current
+    project: state.project.currentProject
 })
 
 export default connect(mapStateToProps)(App);
