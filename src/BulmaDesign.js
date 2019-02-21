@@ -44,6 +44,12 @@ class App extends Component {
         }
     }
 
+    handleProjectsClick(e) {
+        const projects = ["PesonalPub", "BartendersBook", "LoLRecent"];
+        const target = e.target.className.split(" ")[0];
+        console.log(target);
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         const body = this.props.form;
@@ -79,7 +85,7 @@ class App extends Component {
             
             <About />
 
-            <Projects />
+            <Projects Click={this.handleProjectsClick} />
 
             <Contact onSubmit={this.handleSubmit} Change={this.handleInputChange}/>
 
@@ -97,7 +103,8 @@ const mapStateToProps = state => ({
         subject: state.form.subject,
         email: state.form.email,
         content: state.form.content
-    }
+    },
+    project: state.project.current
 })
 
 export default connect(mapStateToProps)(App);

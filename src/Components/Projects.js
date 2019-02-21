@@ -1,4 +1,8 @@
 import React from "react";
+import PersonalPublication from "./ProjectPages/PersonalPublication";
+import BartenderBlackBook from "./ProjectPages/BartendersBlackBook";
+import League from "./ProjectPages/LoL";
+
 
 export default function Projects(props) {
     return (
@@ -12,22 +16,11 @@ export default function Projects(props) {
                 </h1>
                 <div className="controls">
                 {/* want to make the projcets change on click */}
-                {/* want to add a nice transitions to the leaving */}
-                    <button className="previous round">&#8249;</button>
-                    <button className="next round">&#8250;</button>
+                {/* want to add a nice transitions to the leaving project */}
+                    <button className="previous round" onClick={props.Click}>&#8249;</button>
+                    <button className="next round" onClick={props.Click}>&#8250;</button>
                 </div>
-                <div className="columns">
-                    <div className="column">
-                        <img src="https://i.ibb.co/QNGL7XV/Untitled.jpg" alt="Personal Publication" className="projects" />
-                    </div>
-                    <div className="column">
-                        <h1 className="title">Personal Publication</h1>
-                        <h2 className="subtitle">Online journalling made easy.</h2>
-                        <section className="subtitle about">
-                            <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt eleifend risus in lobortis. Vivamus non enim eget nisl ultricies lobortis sit amet a diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris condimentum, mi ac imperdiet viverra, libero odio porttitor arcu, sed commodo sapien sapien quis nibh. Suspendisse lobortis nisi nulla, eget finibus augue faucibus nec.</p>
-                        </section>
-                    </div>
-                </div>
+                <League />
             </div>
         </div>
     </section>
