@@ -23,7 +23,6 @@ class Nav extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
             <div className="hero-head sticky">
                 <nav className="navbar">

@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import "./css/bulma.css";
 import {setBurger} from "./actions/burger";
+import {setName, setSubject, setEmail, setContent} from './actions/form';
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -21,7 +22,9 @@ import Footer from "./Components/Footer";
 class App extends Component {
     constructor(props) {
         super(props);
-        this.handleScroll = this.handleScroll.bind(this)
+        this.handleScroll = this.handleScroll.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount() {
@@ -43,7 +46,28 @@ class App extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log(this);
+        const body = this.props.form;
+    }
+
+    handleInputChange(e) {
+        const value = e.target.value;
+        const field = e.target.name;
+        switch(field){
+            case "name":
+                this.props.dispatch(setName(value));
+                break;
+            case "subject":
+                this.props.dispatch(setSubject(value));
+                break;
+            case "email":
+                this.props.dispatch(setEmail(value));
+                break;
+            case "content":
+                this.props.dispatch(setContent(value));
+                break;
+            default:
+                return ;
+        }
     }
 
     render(){
@@ -57,7 +81,7 @@ class App extends Component {
 
             <Projects />
 
-            <Contact onSubmit={this.handleSubmit}/>
+            <Contact onSubmit={this.handleSubmit} Change={this.handleInputChange}/>
 
             <Footer />
         </section>
@@ -68,6 +92,12 @@ class App extends Component {
 const mapStateToProps = state => ({
     isMenuOpen: state.burgerMenu.isMenuOpen,
     isYOffset: state.burgerMenu.isYOffset,
+    form: {
+        name: state.form.name,
+        subject: state.form.subject,
+        email: state.form.email,
+        content: state.form.content
+    }
 })
 
 export default connect(mapStateToProps)(App);
