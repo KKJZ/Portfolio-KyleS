@@ -1,6 +1,8 @@
 const nodemailer = require('nodemailer');
 const express = require('express');
 
+require('dotenv').config();
+
 const app = express();
 
 app.post('/send', (req,res,next) => {
@@ -27,3 +29,25 @@ app.post('/send', (req,res,next) => {
         }
     })
 })
+
+let server;
+
+function runServer(port = process.env.PORT) {
+    server = app.listen(port, () => {
+        console.log(`Server is listening on PORT: ${port}`);
+    })
+};
+
+function closeServer() {
+    server.close(err => {
+        if (err) {
+            return err;
+        }
+    })
+};
+
+if(require.main === module) {
+    runServer();
+};
+
+module.exports = {app, runServer, closeServer};
