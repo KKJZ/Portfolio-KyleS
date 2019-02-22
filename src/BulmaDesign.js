@@ -54,6 +54,7 @@ class App extends Component {
     handleSubmit(e) {
         e.preventDefault();
         const body = this.props.form;
+        console.log(body);
     }
 
     handleInputChange(e) {

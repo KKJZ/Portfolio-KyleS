@@ -47,13 +47,13 @@ export default function Contact(props) {
                   <button className="button is-link">Submit</button>
                 </div>
                 <div className="control">
-                  <button className="button is-text">Clear</button>
+                  <button className="button is-text" onClick={(e) => e.target.parentElement.parentElement.parentElement.reset()}>Clear</button>
                 </div>
               </div>
             </form>  
             </div>
             <div className="column is-half">
-                <img src="https://i.ibb.co/mGwPMPj/About.jpg" className="about" alt="Picture of Sasha and I" />
+                <img src="https://i.ibb.co/mGwPMPj/About.jpg" className="about" alt="Sasha and I" />
             </div>
           </div>
         </div>
