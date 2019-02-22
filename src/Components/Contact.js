@@ -53,7 +53,7 @@ export default function Contact(props) {
             </form>  
             </div>
             <div className="column is-half">
-                <img src="https://i.ibb.co/mGwPMPj/About.jpg" className="about" alt="Sasha and I" />
+                <img src="https://i.ibb.co/PYHNxvF/IMG-3630.jpg" className="about" alt="Me on the dock" />
             </div>
           </div>
         </div>
