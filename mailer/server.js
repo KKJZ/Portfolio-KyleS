@@ -1,13 +1,30 @@
 const nodemailer = require('nodemailer');
 const express = require('express');
-
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 require('dotenv').config();
 
 const app = express();
 
-app.post('/send', (req,res,next) => {
+//logging
+app.use(morgan('common'));
+
+// CORS
+app.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+    res.header('Access-Control-Allow-Methods', 'POST');
+    if (req.method === 'OPTIONS') {
+      return res.send(204);
+    }
+    next();
+  });
+
+let jsonParser = bodyParser.json();
+
+app.post('/send', jsonParser, (req,res,next) => {
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        service: "Gmail",
         auth: {
             user: "xKKJZx@gmail.com",
             pass: process.env.PASSWORD
@@ -18,8 +35,7 @@ app.post('/send', (req,res,next) => {
         form: `${req.body.email}`,
         to: "xKKJZx@gmail.com",
         subject: `${req.body.subject}`,
-        text: `${req.body.content}`,
-        replyTo: `${req.body.email}`
+        text: `${req.body.content} + ${req.body.email}`,
     };
     transporter.sendMail(mailOptions, function(err, res) {
         if(err) {
