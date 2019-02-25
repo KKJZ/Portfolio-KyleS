@@ -10,7 +10,7 @@ export default function About(props) {
                 <h1 className="title">About Me:</h1>
                 <div className="columns">
                     <div className="column is-half">
-                        <img src="https://i.ibb.co/mGwPMPj/About.jpg" className="about" alt="Picture of Sasha and I" />
+                        <img src="https://i.ibb.co/mGwPMPj/About.jpg" className="about" alt="Sasha and I" />
                         <img src="https://i.ibb.co/6D5rqnk/Drone.jpg" className="about" alt="Flying my drone" />
                     </div>
                     <div className="column is-half">
