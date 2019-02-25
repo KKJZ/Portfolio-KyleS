@@ -56,10 +56,8 @@ class App extends Component {
         e.preventDefault();
         // this is the info that needs to be sent
         const body = this.props.form;
-        // the for element
+        // the form element
         const form = e.target;
-        form.reset();
-        console.log(body);
         fetch(`${API}/send`, {
             method: "POST",
             headers: {
@@ -79,6 +77,22 @@ class App extends Component {
             setTimeout(function(){
                 envelopeTop.classList.remove('active');
                 sent.classList.remove('hidden');
+            }, 1000);
+        })
+        .catch(error => {
+            console.error(error);
+            const card = form.parentElement;
+            const envelope = form.parentElement.parentElement;
+            const envelopeTop = document.querySelector('.envelope-top');
+            const errorMail = document.querySelector('.error-mail');
+            form[0].classList.add('hidden');
+            form[1].classList.add('hidden');
+            envelope.classList.remove('active');
+            card.style.zIndex = 0;
+            card.style.height = "180px";
+            setTimeout(function(){
+                envelopeTop.classList.remove('active');
+                errorMail.classList.remove('hidden');
             }, 1000);
         })
     }

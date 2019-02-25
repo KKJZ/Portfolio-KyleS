@@ -39,7 +39,7 @@ export default function Contact(props) {
             </form>  
             </div>
             <div className="sent hidden"></div>
-            <div className="error hidden"></div>
+            <div className="error-mail hidden"></div>
             </div>
             </div>
             </div>

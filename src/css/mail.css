@@ -39,7 +39,7 @@
   opacity:0.5;
   text-shadow: 0 0 5px #c00;
 }
-.error::before {
+.error-mail::before {
   content:"ERROR";
   position:absolute;
   top:4.5em;
