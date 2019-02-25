@@ -73,3 +73,11 @@ button:hover {
 .round {
     border-radius: 50%;
 } 
+
+div.field.is-grouped {
+    margin-top: 25px;
+}
+
+.hidden {
+    display: hidden;
+}

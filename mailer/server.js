@@ -34,8 +34,10 @@ app.post('/send', jsonParser, (req,res,next) => {
     const mailOptions = {
         form: `${req.body.email}`,
         to: "xKKJZx@gmail.com",
-        subject: `${req.body.subject}`,
-        text: `From: ${req.body.name}, ${req.body.content}  Reply: ${req.body.email}`,
+        subject: "Request From your Website",
+        text: `
+        Content: ${req.body.content}.
+        Reply: ${req.body.email}`,
     };
     transporter.sendMail(mailOptions, function(err, res) {
         if(err) {
@@ -44,11 +46,12 @@ app.post('/send', jsonParser, (req,res,next) => {
             console.log('here is the res:', res)
         }
     })
+    res.end();
 })
 
 let server;
 
-function runServer(port = process.env.PORT) {
+function runServer(port = 3000) {
     server = app.listen(port, () => {
         console.log(`Server is listening on PORT: ${port}`);
     })

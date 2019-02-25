@@ -52,9 +52,35 @@ class App extends Component {
     }
 
     handleSubmit(e) {
+        const API = "http://localhost:3000";
         e.preventDefault();
+        // this is the info that needs to be sent
         const body = this.props.form;
+        // the for element
+        const form = e.target;
+        form.reset();
         console.log(body);
+        fetch(`${API}/send`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        }).then(() => {
+            const card = form.parentElement;
+            const envelope = form.parentElement.parentElement;
+            const envelopeTop = document.querySelector('.envelope-top');
+            const sent = document.querySelector('.sent');
+            form[0].classList.add('hidden');
+            form[1].classList.add('hidden');
+            envelope.classList.remove('active');
+            card.style.zIndex = 0;
+            card.style.height = "180px";
+            setTimeout(function(){
+                envelopeTop.classList.remove('active');
+                sent.classList.remove('hidden');
+            }, 1000);
+        })
     }
 
     handleInputChange(e) {
