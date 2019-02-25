@@ -27,7 +27,8 @@ img.about {
 section.about{
     background-color: rgba(202, 202, 202, 0.40);
     padding: 10px;
-    border-radius: 30px
+    border-radius: 30px;
+    text-align: center;
 }
 
 p.about {

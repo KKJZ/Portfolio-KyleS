@@ -8,9 +8,10 @@ export default function PersonalPublication(props) {
         </div>
         <div className="column">
             <h1 className="title">Personal Publication</h1>
-            <h2 className="subtitle">Online journalling made easy.</h2>
+            <h2 className="subtitle">Online journaling made easy.</h2>
             <section className="subtitle about">
-                <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt eleifend risus in lobortis. Vivamus non enim eget nisl ultricies lobortis sit amet a diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris condimentum, mi ac imperdiet viverra, libero odio porttitor arcu, sed commodo sapien sapien quis nibh. Suspendisse lobortis nisi nulla, eget finibus augue faucibus nec.</p>
+                <p className="about">Always have access to your journal from any browser, on mobile or the desktop.  I designed this app with privacy in mind, so journal about anything from ideas to feelings you have.  Journals can help also improve mental health, depression, and anxiety, and as someone who personally does, I believe this idea could help people with these issues.</p>
+                <a className="button is-dark" href="https://github.com/KKJZ/Journal_React" rel="noopener noreferrer" target="_blank">Check it out here!</a>
             </section>
         </div>
     </div>
