@@ -39,6 +39,29 @@
   opacity:0.5;
   text-shadow: 0 0 5px #c00;
 }
+.error::before {
+  content:"ERROR";
+  position:absolute;
+  top:4.5em;
+  left:2.5em;
+  z-index:5;
+  font-family:Arial,sans-serif;
+  -webkit-transform: rotate(-45deg); /* Safari */
+  -moz-transform: rotate(-45deg); /* Firefox */
+  -ms-transform: rotate(-45deg); /* IE */
+  -o-transform: rotate(-45deg); /* Opera */
+  transform: rotate(-45deg);
+  font-size:40px;
+  color: #c00;
+  background: rgba(0,0,0,0.5);
+  border:solid 4px #c00;
+  padding:5px;
+  border-radius:5px;
+  zoom:1;
+  filter:alpha(opacity=20);
+  opacity:0.5;
+  text-shadow: 0 0 5px green;
+}
 
 .envelope-top {
   width: 0;

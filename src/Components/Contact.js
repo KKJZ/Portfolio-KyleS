@@ -33,12 +33,13 @@ export default function Contact(props) {
               </div>
               <div className="field is-grouped">
                 <div className="control">
-                  <button className="email-button">Submit</button>
+                  <button className="email-button" type="submit">Submit</button>
                 </div>
               </div>
             </form>  
             </div>
             <div className="sent hidden"></div>
+            <div className="error hidden"></div>
             </div>
             </div>
             </div>
