@@ -15,9 +15,7 @@ export default function Projects(props) {
     }
     return (
     <section className="hero is-light is-bold is-fullheight">
-    {/* <!-- Hero content: will be in the middle --> */}
-    <a name="Projects" />
-        <div className="hero-body">
+        <div id="Projects" className="hero-body">
             <div className="container">
                 <h1 className="title">
                     Projects:

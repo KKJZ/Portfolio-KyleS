@@ -3,9 +3,7 @@ import React from "react";
 export default function About(props) {
     return (
     <section className="hero is-dark is-bold is-fullheight">
-    {/* <!-- Hero content: will be in the middle --> */}
-    <a name="About" />
-        <div className="hero-body">
+        <div id="About" className="hero-body">
             <div className="container">
                 <h1 className="title">About Me:</h1>
                 <div className="columns">

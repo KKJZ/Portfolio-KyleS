@@ -4,9 +4,7 @@ import "../css/mail.css";
 export default function Contact(props) {
     return (
     <section className="hero is-dark is-bold is-fullheight">
-    {/* <!-- Hero content: will be in the middle --> */}
-    <a name="Contact" />
-      <div className="hero-body">
+      <div id="Contact" className="hero-body">
         <div className="container">
           <h1 className="title">
               Contact Me
@@ -19,19 +17,6 @@ export default function Contact(props) {
             <div className= "card">
 
             <form onSubmit={(e) => props.onSubmit(e)}>
-              {/* <div className="field">
-                <label className="label">Name</label>
-                <div className="control">
-                  <input className="input" name="name" type="text" placeholder="Name" onChange={props.Change} required />
-                </div>
-              </div>
-
-              <div className="field">
-                <label className="label">Subject</label>
-                <div className="control">
-                  <input className="input" name="subject" type="text" placeholder="Subject" onChange={props.Change} required />
-                </div>
-              </div> */}
 
               <div className="field">
                 <label className="label">Email</label>
