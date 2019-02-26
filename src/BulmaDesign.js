@@ -52,7 +52,7 @@ class App extends Component {
     }
 
     handleSubmit(e) {
-        const API = "http://localhost:3000" || process.env.API;
+        const API = process.env.API || "https://mail-kyle.herokuapp.com/";
         e.preventDefault();
         // this is the info that needs to be sent
         const body = this.props.form;
