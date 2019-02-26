@@ -1,1 +1,1 @@
-web: npm start && npm run mail
+web: npm run mail
