@@ -19,7 +19,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start && npm run mail",
+    "start": "react-scripts start",
     "heroku-postbuild": "npm run build && npm install -g serve",
     "prod": "serve -s build",
     "mail": "node ./mailer/server.js",
