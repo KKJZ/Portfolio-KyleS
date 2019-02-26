@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start && npm run mail",
-    "heroku-postbuild": "npm install && npm run build && npm install -g serve && serve -s build",
+    "heroku-postbuild": "npm install && npm run build",
     "mail": "node ./mailer/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
