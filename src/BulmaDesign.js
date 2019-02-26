@@ -52,7 +52,7 @@ class App extends Component {
     }
 
     handleSubmit(e) {
-        const API = "http://localhost:3000";
+        const API = "http://localhost:3000" || process.env.API;
         e.preventDefault();
         // this is the info that needs to be sent
         const body = this.props.form;
