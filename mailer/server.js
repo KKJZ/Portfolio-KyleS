@@ -22,7 +22,12 @@ app.use(function (req, res, next) {
 
 let jsonParser = bodyParser.json();
 
-app.post('/send', jsonParser, (req,res,next) => {
+app.post('/test', jsonParser, (req,res,next) => {
+    console.log(req.body)
+    res.sendStatus(req.body);
+})
+
+app.post('/send', jsonParser, (req,res) => {
     const transporter = nodemailer.createTransport({
         service: "Gmail",
         auth: {
@@ -48,7 +53,7 @@ app.post('/send', jsonParser, (req,res,next) => {
 
 let server;
 
-function runServer(port = process.env.PORT) {
+function runServer(port = 3000) {
     server = app.listen(port, () => {
         console.log(`Server is listening on PORT: ${port}`);
     })

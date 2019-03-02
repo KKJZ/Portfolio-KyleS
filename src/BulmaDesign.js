@@ -52,9 +52,20 @@ class App extends Component {
     }
 
     handleSubmit(e) {
+        const API = process.env.API || "http://localhost:3000";
         e.preventDefault();
         const body = this.props.form;
         console.log(body);
+        fetch(`${API}/test`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: body
+        })
+        .then(res => console.log(res))
+        .then(() => console.log('CAME BACK'))
+        
     }
 
     handleInputChange(e) {
