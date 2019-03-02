@@ -39,8 +39,10 @@ app.post('/send', jsonParser, (req,res) => {
     const mailOptions = {
         form: `${req.body.email}`,
         to: "xKKJZx@gmail.com",
-        subject: `${req.body.subject}`,
-        text: `From: ${req.body.name}, ${req.body.content}  Reply: ${req.body.email}`,
+        subject: "Request From your Website",
+        text: `
+        Content: ${req.body.content}.
+        Reply: ${req.body.email}`,
     };
     transporter.sendMail(mailOptions, function(err, res) {
         if(err) {
@@ -49,6 +51,7 @@ app.post('/send', jsonParser, (req,res) => {
             console.log('here is the res:', res)
         }
     })
+    res.end();
 })
 
 let server;

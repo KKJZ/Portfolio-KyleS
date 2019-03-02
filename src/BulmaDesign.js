@@ -52,20 +52,66 @@ class App extends Component {
     }
 
     handleSubmit(e) {
+<<<<<<< HEAD
         const API = process.env.API || "http://localhost:3000";
+=======
+        const API = "http://localhost:3000";
+>>>>>>> c8db0105f6d5ca92ab4a471b616199273e3df73f
         e.preventDefault();
+        // this is the info that needs to be sent
         const body = this.props.form;
+<<<<<<< HEAD
         console.log(body);
         fetch(`${API}/test`, {
+=======
+        // the form element
+        const form = e.target;
+        fetch(`${API}/send`, {
+>>>>>>> c8db0105f6d5ca92ab4a471b616199273e3df73f
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
+<<<<<<< HEAD
             body: body
         })
         .then(res => console.log(res))
         .then(() => console.log('CAME BACK'))
         
+=======
+            body: JSON.stringify(body)
+        }).then(() => {
+            const card = form.parentElement;
+            const envelope = form.parentElement.parentElement;
+            const envelopeTop = document.querySelector('.envelope-top');
+            const sent = document.querySelector('.sent');
+            form[0].classList.add('hidden');
+            form[1].classList.add('hidden');
+            envelope.classList.remove('active');
+            card.style.zIndex = 0;
+            card.style.height = "180px";
+            setTimeout(function(){
+                envelopeTop.classList.remove('active');
+                sent.classList.remove('hidden');
+            }, 1000);
+        })
+        .catch(error => {
+            console.error(error);
+            const card = form.parentElement;
+            const envelope = form.parentElement.parentElement;
+            const envelopeTop = document.querySelector('.envelope-top');
+            const errorMail = document.querySelector('.error-mail');
+            form[0].classList.add('hidden');
+            form[1].classList.add('hidden');
+            envelope.classList.remove('active');
+            card.style.zIndex = 0;
+            card.style.height = "180px";
+            setTimeout(function(){
+                envelopeTop.classList.remove('active');
+                errorMail.classList.remove('hidden');
+            }, 1000);
+        })
+>>>>>>> c8db0105f6d5ca92ab4a471b616199273e3df73f
     }
 
     handleInputChange(e) {

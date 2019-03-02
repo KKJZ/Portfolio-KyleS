@@ -17,6 +17,10 @@ $link-hover: hsl(0, 0%, 86%);
 $link-hover-border: black;
 $button-border-color: black;
 
+// font
+@import url('https://fonts.googleapis.com/css?family=Signika');
+$family-sans-serif: "Signika", sans-serif;
+
 // examples
 // // Import a Google Font
 // @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');

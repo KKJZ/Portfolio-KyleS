@@ -10,7 +10,8 @@ export default function LoL(props) {
             <h1 className="title">League of Legends player search</h1>
             <h2 className="subtitle">Find your last three matches in League of Legends.</h2>
             <section className="subtitle about">
-                <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt eleifend risus in lobortis. Vivamus non enim eget nisl ultricies lobortis sit amet a diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris condimentum, mi ac imperdiet viverra, libero odio porttitor arcu, sed commodo sapien sapien quis nibh. Suspendisse lobortis nisi nulla, eget finibus augue faucibus nec.</p>
+                <p className="about">A player search for League of Legends.  I developed this app when I was first learning jquery and how to perform ajax requests.  Currently this app doesn't work all the time as I am attempting to acquire a permanent key for it.</p>
+                <a className="button is-dark" href="https://github.com/KKJZ/League-Recent-Players" rel="noopener noreferrer" target="_blank">Check it out here!</a>                
             </section>
         </div>
     </div>
