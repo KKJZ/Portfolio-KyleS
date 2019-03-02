@@ -1,36 +1,42 @@
 {
-  "name": "portfolio",
+  "name": "redsign",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bulma": "^0.7.2",
-    "node-sass": "^4.10.0",
-    "npm": "^6.4.1",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-redux": "^5.1.0",
+    "compass": "^0.1.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.11.0",
+    "nodemailer": "^5.1.1",
+    "npm": "^6.8.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.5",
     "redux": "^4.0.1"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/mystyles.scss public/css/mystyles.css",
     "start": "react-scripts start",
+    "heroku-postbuild": "npm run build && npm install -g serve",
+    "prod": "serve -s build",
+    "mail": "node ./mailer/server.js",
     "build": "react-scripts build",
-    "test": "cypress run",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "cypress open"
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss src/css/bulma.css",
+    "css-watch": "npm run css-build -- --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://www.kylestockmann.com",
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "cypress": "^3.1.4"
-  }
+  ]
 }

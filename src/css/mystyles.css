@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.landing {
+    background-image: url(https://i.ibb.co/MfT5p58/Landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#3d3f40,#363a18);
+    opacity: .6; 
+}
+
+img.about {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+section.about{
+    background-color: rgba(202, 202, 202, 0.40);
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+p.about {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+div.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+img.projects {
+    border-radius: 5px; 
+}
+
+button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+button:hover {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #8e8e8e;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+} 
+
+div.field.is-grouped {
+    margin-top: 25px;
+}
+
+.hidden {
+    display: hidden;
+}
