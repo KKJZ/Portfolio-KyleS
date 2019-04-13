@@ -53,10 +53,10 @@ class App extends Component {
             const target = e.target.className.split(" ")[0];
             findProject(this.props.project, target, this.props.dispatch)
         } else if (targetClasses.includes('pagination')) {
+            //target for action
             let targetProject = targetClasses.find(targetClassName => {
                 return targetClassName !== "pagination" && targetClassName !== "selected";
             });
-            console.log(targetProject);
             this.props.dispatch(setProject(targetProject));
         }
     }
