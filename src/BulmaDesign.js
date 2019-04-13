@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import "./css/bulma.css";
 import {setBurger} from "./actions/burger";
 import {setName, setSubject, setEmail, setContent} from './actions/form';
-import {findProject} from "./actions/project"
+import {findProject, setProject} from "./actions/project"
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -48,8 +48,17 @@ class App extends Component {
     }
 
     handleProjectsClick(e) {
-        const target = e.target.className.split(" ")[0];
-        findProject(this.props.project, target, this.props.dispatch)
+        let targetClasses = e.target.className.split(" ");
+        if(targetClasses.includes("arrow")) {
+            const target = e.target.className.split(" ")[0];
+            findProject(this.props.project, target, this.props.dispatch)
+        } else if (targetClasses.includes('pagination')) {
+            let targetProject = targetClasses.find(targetClassName => {
+                return targetClassName !== "pagination" && targetClassName !== "selected";
+            });
+            console.log(targetProject);
+            this.props.dispatch(setProject(targetProject));
+        }
     }
 
     handleSubmit(e) {

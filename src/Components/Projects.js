@@ -27,7 +27,26 @@ export default function Projects(props) {
                 {selectedProject}
                     <button className="next arrow" onClick={props.Click}></button>
                 </div>
-                {/* <p>CURRENT ONE</p> */}
+                <div className="index">
+                    <button className={
+                        props.current === "PersonalPub"
+                            ? "pagination selected PersonalPub"
+                            : "pagination PersonalPub"}
+                            onClick={props.Click}>
+                    </button>
+                    <button className={
+                        props.current === "BartendersBB"
+                            ? "pagination selected BartendersBB"
+                            : "pagination BartendersBB"}
+                            onClick={props.Click}>
+                    </button>
+                    <button className={
+                        props.current === "LoL"
+                            ? "pagination selected LoL"
+                            : "pagination LoL"}
+                            onClick={props.Click}>
+                    </button>
+                </div>
             </div>
         </div>
     </section>

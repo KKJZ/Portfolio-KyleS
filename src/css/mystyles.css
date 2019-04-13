@@ -70,21 +70,6 @@ div.projects {
     padding: 15px;
 }
 
-button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-button:hover {
-    border: solid #363636;
-    background: none;
-    border-width: 0 20px 20px 0;
-    display: inline-block;
-    padding: 20px;
-    cursor: pointer;
-}
-
 .previous {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -101,7 +86,18 @@ button:hover {
     border-width: 0 20px 20px 0;
     display: inline-block;
     padding: 20px;
+    text-decoration: none;
+    display: inline-block;
 } 
+
+.arrow:hover {
+    border: solid #363636;
+    background: none;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
 
 div.field.is-grouped {
     margin-top: 25px;
@@ -109,4 +105,31 @@ div.field.is-grouped {
 
 .hidden {
     display: hidden;
+}
+
+div.index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button.pagination {
+    border: solid black;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+}
+
+button.pagination:hover {
+    cursor: pointer;
+    border: solid #363636;
+}
+
+button.selected { 
+    background: black;
+}
+
+button.selected:hover {
+    background: #363636;
 }
