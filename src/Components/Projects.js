@@ -16,17 +16,18 @@ export default function Projects(props) {
     return (
     <section className="hero is-light is-bold is-fullheight">
         <div id="Projects" className="hero-body">
-            <div className="container">
+            <div className="container projects">
                 <h1 className="title">
                     Projects:
                 </h1>
                 <div className="controls">
                 {/* want to make the projcets change on click */}
                 {/* want to add a nice transitions to the leaving project */}
-                    <button className="previous round" onClick={props.Click}>&#8249;</button>
-                    <button className="next round" onClick={props.Click}>&#8250;</button>
-                </div>
+                    <button className="previous arrow" onClick={props.Click}></button>
                 {selectedProject}
+                    <button className="next arrow" onClick={props.Click}></button>
+                </div>
+                {/* <p>CURRENT ONE</p> */}
             </div>
         </div>
     </section>

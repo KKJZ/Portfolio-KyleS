@@ -27,6 +27,7 @@ img.about {
 section.about{
     background-color: rgba(202, 202, 202, 0.40);
     padding: 10px;
+    border: solid black 1px;
     border-radius: 30px;
     text-align: center;
 }
@@ -54,7 +55,19 @@ div.controls {
 }
 
 img.projects {
-    border-radius: 5px; 
+    border-radius: 5px;
+    position: relative;
+    top: 25%;
+}
+
+img.bb {
+    top: 0%;
+}
+
+div.projects {
+    background-color: rgba(202, 202, 202, 0.60);
+    border-radius: 30px;
+    padding: 15px;
 }
 
 button {
@@ -64,23 +77,30 @@ button {
 }
 
 button:hover {
-    background-color: grey;
-    color: black;
+    border: solid #363636;
+    background: none;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
     cursor: pointer;
 }
 
 .previous {
-    background-color: #f1f1f1;
-    color: black;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 .next {
-    background-color: #8e8e8e;
-    color: white;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); 
 }
 
-.round {
-    border-radius: 50%;
+.arrow {
+    background: none;
+    border: solid black;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
 } 
 
 div.field.is-grouped {
