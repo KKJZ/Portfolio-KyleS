@@ -4,7 +4,7 @@ export default function BartendersBlackBook(props) {
     return(
     <div className="columns">
         <div className="column">
-            <img src="https://image.ibb.co/jWs7FA/drink.jpg" alt="Bartender's Black Book" className="projects bb" />
+            <img src="https://image.ibb.co/jWs7FA/drink.jpg" alt="Bartender's Black Book" className="projects" />
         </div>
         <div className="column">
             <h1 className="title">Bartender's BlackBook</h1>
